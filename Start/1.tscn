@@ -1,0 +1,80 @@
+[gd_scene load_steps=6 format=3 uid="uid://dueevaj3nyrf5"]
+
+[ext_resource type="FontFile" uid="uid://d2ue6ky0jcxnt" path="res://Assets/Montserrat-Bold.ttf" id="1_2h5hr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ixfi8"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ytpsp"]
+font = ExtResource("1_2h5hr")
+font_size = 55
+font_color = Color(0.29219, 0.29219, 0.29219, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_vpjof"]
+font = ExtResource("1_2h5hr")
+font_size = 30
+font_color = Color(0.294118, 0.294118, 0.294118, 1)
+
+[sub_resource type="SystemFont" id="SystemFont_dywvt"]
+subpixel_positioning = 0
+
+[node name="1" type="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ixfi8")
+
+[node name="Header" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -540.0
+offset_top = 460.0
+offset_right = 541.0
+offset_bottom = 620.0
+grow_horizontal = 2
+text = "PAGE 1"
+label_settings = SubResource("LabelSettings_ytpsp")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Text" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -431.0
+offset_top = -491.0
+offset_right = 431.0
+offset_bottom = 491.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor "
+label_settings = SubResource("LabelSettings_vpjof")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 1
+
+[node name="Next_Btn" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -369.0
+offset_top = -229.0
+offset_right = -79.0
+offset_bottom = -124.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_fonts/font = SubResource("SystemFont_dywvt")
+theme_override_font_sizes/font_size = 71
+text = "NEXT"
+
+[connection signal="pressed" from="Next_Btn" to="." method="_on_next_btn_pressed"]
