@@ -1,9 +1,11 @@
-[gd_scene load_steps=18 format=3 uid="uid://dfa1yo16m61fe"]
+[gd_scene load_steps=20 format=3 uid="uid://dfa1yo16m61fe"]
 
 [ext_resource type="Texture2D" uid="uid://bkh60omqa8avb" path="res://VARLİK/ASSETS/StartLearn_Btn.png" id="1_uc34m"]
 [ext_resource type="FontFile" uid="uid://dfrwgu4yeieae" path="res://VARLİK/ASSETS/Kubasta.otf" id="1_xxglf"]
 [ext_resource type="Texture2D" uid="uid://yx38lo10th4n" path="res://VARLİK/ASSETS/StartLearn_Btn2.png" id="1_yat25"]
 [ext_resource type="Texture2D" uid="uid://dqgl8cu0uanux" path="res://VARLİK/ASSETS/StartLearn_Btn3.png" id="3_uyukr"]
+[ext_resource type="Texture2D" uid="uid://bgp8woia6cmk1" path="res://VARLİK/ASSETS/Ta..png" id="5_6h2rb"]
+[ext_resource type="Texture2D" uid="uid://calavusi7s7mc" path="res://VARLİK/ASSETS/StartLearn_Btn5.png" id="5_po2cm"]
 
 [sub_resource type="Gradient" id="Gradient_pq32t"]
 offsets = PackedFloat32Array(0, 0.9)
@@ -49,23 +51,26 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="backround" type="TextureRect" parent="."]
+layout_mode = 0
 offset_right = 720.0
 offset_bottom = 1600.0
 texture = SubResource("GradientTexture2D_uai3p")
+metadata/_edit_lock_ = true
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.0555556
-anchor_top = 0.095
+anchor_top = 0.129375
 anchor_right = 1.0
-anchor_bottom = 0.86
+anchor_bottom = 0.885
 horizontal_scroll_mode = 3
 vertical_scroll_mode = 2
 metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
-custom_minimum_size = Vector2(640, 2200)
+custom_minimum_size = Vector2(640, 2300)
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_constants/separation = 8
@@ -501,3 +506,58 @@ icon = ExtResource("1_yat25")
 flat = true
 icon_alignment = 1
 expand_icon = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.889375
+anchor_right = 1.0
+anchor_bottom = 1.0
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="Button" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(176, 0)
+layout_mode = 2
+icon = ExtResource("5_po2cm")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Ta_" type="Sprite2D" parent="HBoxContainer/Button"]
+position = Vector2(88, 91)
+scale = Vector2(2, 2)
+texture = ExtResource("5_6h2rb")
+
+[node name="Button2" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(176, 0)
+layout_mode = 2
+icon = ExtResource("5_po2cm")
+flat = true
+expand_icon = true
+
+[node name="Button3" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(176, 0)
+layout_mode = 2
+icon = ExtResource("5_po2cm")
+flat = true
+expand_icon = true
+
+[node name="Button4" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(176, 0)
+layout_mode = 2
+icon = ExtResource("5_po2cm")
+flat = true
+expand_icon = true
+
+[node name="baslik" type="Label" parent="."]
+layout_mode = 0
+offset_right = 720.0
+offset_bottom = 172.0
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("1_xxglf")
+theme_override_font_sizes/font_size = 74
+text = "- Dersler -"
+horizontal_alignment = 1
+vertical_alignment = 1
