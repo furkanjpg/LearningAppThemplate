@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgp8woia6cmk1"
-path="res://.godot/imported/Ta..png-2156d10aadd15d39dace5fed98dd9e35.ctex"
+uid="uid://yx38lo10th4n"
+path="res://.godot/imported/StartLearn_Btn2.png-6ff3356fa4c382544558af0bcccff0cf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Ta..png"
-dest_files=["res://.godot/imported/Ta..png-2156d10aadd15d39dace5fed98dd9e35.ctex"]
+source_file="res://VARLİK/ASSETS/StartLearn_Btn2.png"
+dest_files=["res://.godot/imported/StartLearn_Btn2.png-6ff3356fa4c382544558af0bcccff0cf.ctex"]
 
 [params]
 

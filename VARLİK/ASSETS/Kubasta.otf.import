@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://d2ue6ky0jcxnt"
-path="res://.godot/imported/Montserrat-Bold.ttf-627f384da2d610a3a5de85a15e1db552.fontdata"
+uid="uid://dfrwgu4yeieae"
+path="res://.godot/imported/Kubasta.otf-7cf5752a198effc36b2e5d6477cf5256.fontdata"
 
 [deps]
 
-source_file="res://Assets/Montserrat-Bold.ttf"
-dest_files=["res://.godot/imported/Montserrat-Bold.ttf-627f384da2d610a3a5de85a15e1db552.fontdata"]
+source_file="res://VARLİK/ASSETS/Kubasta.otf"
+dest_files=["res://.godot/imported/Kubasta.otf-7cf5752a198effc36b2e5d6477cf5256.fontdata"]
 
 [params]
 

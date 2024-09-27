@@ -12,14 +12,14 @@ config_version=5
 
 config/name="Learn English App"
 config/version="21"
-run/main_scene="res://Start.tscn"
+run/main_scene="res://VARLİK/SCENES/MAIN.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
 config/icon="res://icon.svg"
 
 [display]
 
-window/size/viewport_width=540
-window/size/viewport_height=960
+window/size/viewport_width=720
+window/size/viewport_height=1600
 window/stretch/mode="canvas_items"
 window/handheld/orientation=1
 
@@ -33,6 +33,7 @@ pointing/emulate_touch_from_mouse=true
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver="opengl3"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
